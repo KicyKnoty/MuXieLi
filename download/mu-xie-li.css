@@ -1,0 +1,364 @@
+:root{
+    /*body*/
+    --backgroud-color:  rgb(245,237,237);
+    /*h1*/
+    --h1-color:rgb(85,55,49);
+    /*h1 before*/
+    --h1-before-backgroud-color:rgb(212,185,180);
+    /*h2*/
+    --h2-color:rgb(0,0,0);
+    /*h3*/
+    --h3-color:rgb(0,0,0);
+    /*h3 before*/
+    --h3-before-backgroud-color:rgb(212,185,180);
+    --h3-before-color:rgb(212,185,180);
+    /*h4*/
+    --h4-color:rgb(0,0,0);
+    /*h4 before*/
+    --h4-before-backgroud-color:rgb(212,185,180);
+    --h4-before-color:rgb(212,185,180);
+    /*h5*/
+    --h5-color:rgb(212,185,180);
+    /*h5 before*/
+    --h5-before-backgroud-color: rgb(141,136,136);
+    --h5-before-color:rgb(141,136,136);
+    /*h6*/
+    --h6-color:rgb(212,185,180);
+    /*h6 before*/
+    --h6-before-backgroud-color:rgb(141,136,136);
+    --h6-before-color:rgb(141,136,136);
+
+    /*p*/
+    --p-color:rgb(0,0,0);
+    /*a*/
+    --a-color:rgb(212,185,180);
+    --a-hover-color:rgb(177,140,135);
+    /*li*/
+    --li1-color:rgb(212,185,180);
+    --li2-color:rgb(177,140,135);
+    /*hr*/
+    --hr-color:rgb(212,185,180);
+    /*mark*/
+    --mark-color:rgb(212,185,180);
+    /*blockquote*/
+    --blockquote-left:rgb(85,55,49);
+    --blockquote-backgroud-color:rgb(227,215,213);   
+
+    /*md.fences*/
+    --fences-border-color:rgb(187,182,216);
+    --fences-backgroud-color:rgb(241,239,247);
+    --fences-color:rgb(133, 125, 175);
+
+    /*table*/
+    --table-first-color:rgb(212,185,180);
+    --table1-color:rgb(245,237,237);
+    --table2-color:rgb(227,215,213);
+    --table-line-color:rgb(184, 184, 184);
+
+    /*code*/
+    --code-backgroud-color:rgb(230,230,230);
+    --code-color:rgb(133, 125, 175);
+
+    /*footnote*/
+    --footnote-backgroud-color:rgb(230,230,230);
+    --footnote-color:rgb(133, 125, 175);
+}
+
+html,
+body{
+background: var(--backgroud-color);
+/*font-family: 'Open Sans';*/
+font-weight: 400;
+}
+html {
+font-size:16px;
+}
+#write {
+max-width: 90%;
+text-align: justify;
+}
+
+
+/*Write part*/
+#write h1{
+color:var(--h1-color);
+font-size: 45px;
+margin: 16px;
+position: relative;
+}
+#write h1::before{
+position: absolute;
+content: '';
+background-color: var(--h1-before-backgroud-color);
+left: -16px;
+bottom: -20px;
+width: 25%;
+height: 8px;
+}
+#write h2{
+color: var(--h2-color);
+font-size: 38px;
+margin: 7px;
+}
+#write h3{
+color: var(--h3-color);
+font-size: 26px;
+margin: 24px;
+position: relative;
+}
+#write h3::before{
+position: absolute;
+content: "H3";
+font-size: 8px;
+background-color:var(--h3-before-backgroud-color);
+color: var(--h3-before-color);
+left: 0;
+bottom: -8px;
+width: 20%;
+height: 2px;
+}
+#write h4{
+color:var(--h4-color);
+font-size: 20px;
+margin: 40px;
+position: relative;
+}
+#write h4::before{
+position: absolute;
+content: "H4";
+font-size: 8px;
+background-color:var(--h4-before-backgroud-color);
+color: var(--h4-before-color);
+left: 0;
+bottom: -8px;
+width: 15%;
+height: 2px;
+}
+#write h5{
+color: var(--h5-color);
+font-size: 18px;
+margin: 32px;
+position: relative;
+}
+#write h5::before{
+position: absolute;
+content: "H5" ;
+font-size: 8px;
+background-color:var(--h5-before-backgroud-color);
+color:var(--h5-before-color);
+left: 0;
+bottom: -10px;
+width: 10%;
+height: 2px;
+}
+#write h6{
+color: var(--h6-color);
+font-size: 18px;
+margin: 48px;
+position: relative;
+}
+#write h6::before{
+position: absolute;
+content: "H6" ;
+font-size: 8px;
+background-color:var(--h6-before-backgroud-color);
+color: var(--h6-before-color);
+left: 0;
+bottom: -10px;
+width: 5%;
+height: 2px;
+}
+#write h1:hover a.anchor,
+#write h2:hover a.anchor,
+#write h3:hover a.anchor,
+#write h4:hover a.anchor,
+#write h5:hover a.anchor,
+#write h6:hover a.anchor {
+text-decoration: none;
+}
+
+#write p {
+color: var(--p-color);
+font-size: 16px;
+line-height: 28px;
+margin: 0 0 20px;
+text-indent: 36px;
+}
+
+#write a,
+.md-def-url {
+font-size: 16px;
+color: var(--a-color);
+text-decoration: none;
+}
+#write a:hover {
+color: var(--a-hover-color);
+font-size: 16px;
+text-decoration: underline;
+}
+
+#write ol,#write ul{
+padding-left: 48px;
+line-height: 24px;
+}
+#write li{
+font-size: 16px;
+color: var(--li1-color);
+}
+#write li:nth-child(even){
+font-size: 16px;
+color: var(--li2-color);
+}
+
+#write hr{
+background-color: var(--hr-color);
+height: 2px;
+padding: 0;
+margin: 16px 0;
+border: 0 none;
+overflow: hidden;
+box-sizing: content-box;
+}
+
+#write mark{
+background-color: var(--mark-color);
+}
+
+#write blockquote {
+border-radius: 5px;
+padding: 0 15px;
+border-left: 4px solid var(--blockquote-left);
+background-color: var(--blockquote-backgroud-color);
+}
+#write table {
+margin-bottom: 20px;
+border-collapse: collapse;
+caption-side: top;
+empty-cells: hide;
+}
+#write table th{
+background-color: var(--table-first-color);
+height: 32px;
+font-size: 24px;
+border: 2px solid var(--table-line-color);
+padding: 2px;
+font-weight: bold;
+}
+#write table td{
+border: 2px solid var(--table-line-color);
+padding: 2px;
+}
+#write table tr{
+background-color: var(--table1-color);
+height: 32px;
+}
+#write table tr:nth-child(even){
+background-color: var(--table2-color);
+height: 32px;
+}
+table caption+thead tr:first-child th,
+table caption+thead tr:first-child td,
+table colgroup+thead tr:first-child th,
+table colgroup+thead tr:first-child td,
+table thead:first-child tr:first-child th,
+table thead:first-child tr:first-child td {
+border-top: 0
+}
+#write table tbody+tbody {
+border-top: 2px solid #ddd
+}
+
+#write code{
+background-color: var(--code-backgroud-color);
+color: var(--code-color);
+border-radius: 2px;
+}
+
+#write .md-fences {
+border: 5px solid var(--fences-border-color);
+background-color: var(--fences-backgroud-color);
+color: var(--fences-color);
+border-radius: 5px;
+padding: 16px;
+font-size: 16px;
+margin-left: 3px;
+margin-right: 3px;
+}
+
+#write sup.md-footnote{
+background-color: var(--footnote-backgroud-color);
+color: var(--footnote-color);
+}
+
+#write .task-list{
+padding-left: 0;
+}
+#write .task-list-item {
+padding-left:32px;
+}
+#write .task-list-item input {
+top: 3px;
+}
+#write .task-list-item input:before {
+content: "";
+display: inline-block;
+width: 1rem;
+height: 1rem;
+vertical-align: middle;
+text-align: center;
+border: 1px solid gray;
+background-color: #fdfdfd;
+margin-left: 0;
+margin-top: -0.5rem;
+}
+#write .task-list-item input:checked:before,
+#write .task-list-item input[checked]:before{
+content: '\25FC';
+font-size: 0.8125rem;
+line-height: 0.9375rem;
+margin-top: -1rem;
+}
+
+#write pre.md-meta-block {
+min-height: 30px;
+background: #f8f8f8;
+padding: 1.5em;
+font-weight: 300;
+font-size: 1em;
+padding-bottom: 1.5em;
+padding-top: 3em;
+margin-top: -1.5em;
+color: #999;
+border-left: 1000px #f8f8f8 solid;
+margin-left: -1000px;
+border-right: 1000px #f8f8f8 solid;
+margin-right: -1000px;
+margin-bottom: 2em;
+}
+.MathJax_Display {
+font-size: 0.9em;
+margin-top: 0.5em;
+margin-bottom: 0;
+}
+p.mathjax-block,
+.mathjax-block {
+padding-bottom: 0;
+}
+.mathjax-block>.code-tooltip {
+bottom: 5px;
+box-shadow: none;
+}
+.md-image>.md-meta {
+padding-left: 0.5em;
+padding-right: 0.5em;
+}
+.md-image>img {
+margin-top: 2px;
+}
+.md-image>.md-meta:first-of-type:before {
+padding-left: 4px;
+}
+
+#typora-source {
+color: #555;
+}
