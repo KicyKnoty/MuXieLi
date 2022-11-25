@@ -19,11 +19,11 @@ typora-copy-images-to: ../../media/theme/muxieli
 
 ![thumbnails](../../media/thumbnails/muxieli.png)
 
-![first](../../media/theme/MuXieLi/first.png)
+![first](../../media/theme/muxieli/first.png)
 
-![second](../../media/theme/MuXieLi/second.png)
+![second](../../media/theme/muxieli/second.png)
 
-![third](../../media/theme/MuXieLi/third.png)
+![third](../../media/theme/muxieli/third.png)
 
 ## 下载方法
 
