@@ -17,13 +17,13 @@ typora-copy-images-to: ../../media/theme/muxieli
 
 ## 截图
 
-![thumbnails](../../media/thumbnails/muxieli.png)
+![thumbnails](../../tree/main/media/thumbnails/muxieli.png)
 
-![first](../../media/theme/muxieli/first.png)
+![first](../../tree/main/media/theme/muxieli/first.png)
 
-![second](../../media/theme/muxieli/second.png)
+![second](../../tree/main/media/theme/muxieli/second.png)
 
-![third](../../media/theme/muxieli/third.png)
+![third](../../tree/main/media/theme/muxieli/third.png)
 
 ## 下载方法
 
