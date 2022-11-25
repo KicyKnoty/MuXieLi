@@ -17,7 +17,7 @@ typora-copy-images-to: ../../media/theme/muxieli
 
 ## 截图
 
-![thumbnails](../../tree/main/media/thumbnails/muxieli.png)
+![thumbnails](../../media/thumbnails/muxieli.png)
 
 ![first](../../tree/main/media/theme/muxieli/first.png)
 
